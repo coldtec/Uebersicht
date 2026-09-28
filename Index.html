@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Coldtec Übersicht</title>
+
+<style>
+:root{
+  --bg:#071017;
+  --card:#101b26;
+  --text:#f4f7fb;
+  --muted:#a9c5d8;
+  --border:#24384a;
+  --cyan:#00e5e5;
+}
+
+*{box-sizing:border-box}
+
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--text);
+  font-family:Inter,Segoe UI,Arial,sans-serif;
+  line-height:1.55;
+}
+
+.wrap{
+  max-width:900px;
+  margin:auto;
+  padding:42px 24px 70px;
+}
+
+.tool-label{
+  color:var(--cyan);
+  font-size:13px;
+  font-weight:800;
+  letter-spacing:1.5px;
+  margin-bottom:12px;
+}
+
+h1{
+  font-size:34px;
+  margin:0 0 8px;
+}
+
+.intro{
+  color:var(--muted);
+  margin:0 0 28px;
+}
+
+.menu{
+  display:grid;
+  gap:14px;
+}
+
+.card{
+  display:block;
+  position:relative;
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:14px;
+  padding:22px 24px;
+  color:var(--text);
+  text-decoration:none;
+  transition:.18s ease;
+  overflow:hidden;
+}
+
+.card:before{
+  content:"";
+  position:absolute;
+  left:0;
+  top:0;
+  bottom:0;
+  width:5px;
+  background:var(--accent);
+}
+
+.card:hover{
+  transform:translateY(-2px);
+  border-color:var(--accent);
+}
+
+.card h2{
+  font-size:19px;
+  margin:0 0 5px;
+}
+
+.card p{
+  margin:0;
+  color:var(--muted);
+  font-size:14px;
+}
+
+.arrow{
+  position:absolute;
+  right:22px;
+  top:50%;
+  transform:translateY(-50%);
+  font-size:22px;
+  color:var(--accent);
+  font-weight:bold;
+}
+
+.yellow{--accent:#ffd166;}
+.lightblue{--accent:#74d7ff;}
+.blue{--accent:#258cff;}
+.darkblue{--accent:#315da8;}
+
+.footer{
+  text-align:center;
+  color:#71899a;
+  font-size:12px;
+  margin-top:24px;
+}
+
+@media(max-width:600px){
+  .wrap{padding:28px 16px 50px}
+  h1{font-size:29px}
+  .card{padding:19px 45px 19px 20px}
+}
+</style>
+</head>
+
+<body>
+
+<div class="wrap">
+
+  <div class="tool-label">COLDTEC TOOLS</div>
+  <h1>Übersicht</h1>
+  <p class="intro">Tools und Anleitungen für die Artikelverwaltung.</p>
+
+  <div class="menu">
+
+    <a class="card yellow"
+       href="https://coldtec.github.io/Anleitung_Artikelimport/">
+      <h2>Anleitung Artikelimport</h2>
+      <p>Schritt-für-Schritt-Anleitung für den Artikelimport</p>
+      <span class="arrow">›</span>
+    </a>
+
+    <a class="card lightblue"
+       href="https://coldtec.github.io/Artikelneuanlage/">
+      <h2>Artikel-Neuanlage</h2>
+      <p>Neue Artikel vorbereiten</p>
+      <span class="arrow">›</span>
+    </a>
+
+    <a class="card blue"
+       href="https://coldtec.github.io/Artikelimport/">
+      <h2>Artikelimport</h2>
+      <p>Importdateien erstellen und aufbereiten</p>
+      <span class="arrow">›</span>
+    </a>
+
+    <a class="card darkblue"
+       href="https://coldtec.github.io/bilder/">
+      <h2>Medien-Download (Secomp)</h2>
+      <p>Bilder und Medien für Secomp-Artikel herunterladen</p>
+      <span class="arrow">›</span>
+    </a>
+
+  </div>
+
+  <div class="footer">COLDTEC · Tools & Anleitungen</div>
+
+</div>
+
+</body>
+</html>
+```
